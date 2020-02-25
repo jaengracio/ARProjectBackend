@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 
 app.use('/women', womenRouter);
 
-const port = 4000;
+const proces.env.PORT || const port = 4000;
 
 app.listen(port, () => {
   console.log(`Server listening ${port}`);
